@@ -1,0 +1,221 @@
+@font-face {
+    font-family:font1 ;
+    src: url(D-DIN.woff);
+}
+@font-face {
+    font-family:font2 ;
+    src: url(D-DIN-Bold.woff);
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color:  #000;;
+    color: #fff;
+    font-family: font2;
+}
+a{
+    color: #fff;
+}
+svg
+{
+    fill: #fff;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 45px 90px;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header svg{
+    width: 140px;
+}
+header a.logo{
+   position: fixed;
+   top: 20px;
+   left: 50%;
+   margin-left: -70px;
+}
+@media (min-width: 960px){
+    header svg{
+        width: 200px;
+    }
+     header a.logo{
+        margin-right: 40px;
+        position: initial;
+   top: initial;
+   left: initial;
+   margin-left: initial;
+     }
+}
+.center-nav{
+    display: none;
+}
+@media (min-width: 960px){
+.center-nav{
+    display: block;
+}
+}
+.center-nav a{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+.right-nav{
+    position: fixed;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.right-nav a{
+
+    display: none;
+}
+@media (min-width: 960px){
+    .right-nav a{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 0 50px;
+    }
+}
+section{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+position: relative;
+display: flex;
+align-items: flex-end;
+}
+
+section div.content-outer{
+    flex-grow: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+section div.content{
+    position: absolute;
+    bottom: 15vh;
+    left: 30px;
+    max-width: 360px;
+    
+}
+section div.content h2{
+    font-size: 48px;
+    margin: 0;
+    width: 500px;
+}
+@media (max-width:840px)
+{
+    section div.content h2{
+         width: 225px;
+         font-size: 36px;
+    }
+
+}
+section div.content h3{
+    margin: 0;
+    margin: 0 0 10px;
+    font-family: font1;
+}
+footer{
+    padding: 30px;
+    font-size: 12px;
+    font-family: font2,sans-serif;
+}
+footer nav{
+    text-align: center;
+}
+footer nav span{
+    color: #777;
+    display: inline-block;
+    padding-right: 10px;
+}
+footer nav a{
+    padding: 0 20px;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+footer nav a:hover{
+    color: #aaa;
+}
+#side
+{
+    color: white; 
+    font-family: font1; 
+    text-align: right;
+    padding: 50px 20px;
+}
+#side ul{
+    border-bottom: #777 solid 0.5px;
+    cursor: pointer;
+}
+@media(min-width:960px)
+{
+    .font-visi{
+        display: none;
+    }
+}
+.btn-jango {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 163.2px;
+    height: 53.2px;
+    min-width: 130px;
+    padding: 0 15px;
+    margin: 15px 0 0;
+    border: 2px solid #fff;
+    text-decoration: none;
+    font: 14px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
+    font-weight: normal;
+    color: white;
+    transition: color 0.5s ease-in-out 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .btn-jango p {
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+  }
+  .btn-jango::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  .btn-jango p:hover {
+    color:black;
+  }
+  .btn-jango:hover::before {
+    height: 100%;
+    top: initial;
+    bottom: 0;
+  }
+ .ar-rows{
+
+ }
+ .amp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+.amp{
+    cursor: pointer;
+}
